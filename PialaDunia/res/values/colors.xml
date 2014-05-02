@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="base_color">#ccb60a</color>
+    <color name="base_color_light">#d6c53b</color>
+    <color name="base_color_dark">#a39208</color>
+    <color name="menu_color">#ffffff</color>
+    <color name="menu_view">#00000000</color>
+    <color name="menu_view_selected">#aa000000</color>
+</resources>

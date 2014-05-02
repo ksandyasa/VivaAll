@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/id.co.viva.pialadunia"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    ptr:ptrAnimationStyle="flip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <id.co.viva.pialadunia.view.ResizableViewPager
+            android:id="@+id/pager_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <id.co.viva.pialadunia.view.ResizableImageView
+            android:id="@+id/view_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headline" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/indicator_headline"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignBottom="@id/pager_headline"
+            app:fades="false"
+            app:selectedColor="@color/base_color" />
+
+        <TextView
+            android:id="@+id/news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager_headline"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/news"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/front_title_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/news"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/base_color" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/indicator_news"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@id/separator1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:fades="false"
+            app:selectedColor="@color/base_color" />
+
+        <id.co.viva.pialadunia.view.ResizableViewPager
+            android:id="@+id/pager_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator1" />
+
+        <TextView
+            android:id="@+id/worldcuptainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager_news"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/wordcuptainment"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/front_title_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/worldcuptainment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/base_color" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/indicator_worldcuptainment"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@id/separator2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:fades="false"
+            app:selectedColor="@color/base_color" />
+
+        <id.co.viva.pialadunia.view.ResizableViewPager
+            android:id="@+id/pager_worldcuptainment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator2" />
+
+        <TextView
+            android:id="@+id/live_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager_worldcuptainment"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/live_score"
+            android:textColor="@color/base_color"
+            android:textSize="@dimen/front_title_size"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/separator3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/live_score"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/base_color" />
+
+        <com.viewpagerindicator.UnderlinePageIndicator
+            android:id="@+id/indicator_live_score"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_above="@id/separator3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:fades="false"
+            app:selectedColor="@color/base_color" />
+
+        <id.co.viva.pialadunia.view.ResizableViewPager
+            android:id="@+id/pager_live_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator3" />
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pager_live_score" >
+
+            <include layout="@layout/item_footer" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>

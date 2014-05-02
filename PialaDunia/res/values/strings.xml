@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Piala Dunia</string>
+    <string name="news">NEWS</string>
+    <string name="wordcuptainment">WORLDCUPTAINMENT</string>
+    <string name="live_score">LIVE SCORE</string>
+    
+    <string name="sample_full_date">14 APRIL 2014 10:52 WIB</string>
+    <string name="sample_score">99 &#8211; 99</string>
+    <string name="sample_team1">Kosta Rika</string>
+    <string name="sample_team2">P. Gading</string>
+    <string name="sample_time">15:30</string>
+    <string name="sample_title">Bek Ini Yakin Jadi Starter Prancis di Piala DuniaBek Ini Yakin Jadi Starter Prancis di Piala Dunia</string>
+    
+    <string name="footer">Copyright @2014 PT. VIVA Media Baru\nNews &amp; Community Portal</string>
+    
+    <string name="url_gcm_regiter">http://172.24.2.83/tester/gcm_register.php</string>
+    <!-- <string name="url_front_page">http://172.24.2.83/tester/pp_front_page.json</string> -->
+    <string name="url_front_page">http://app.viva.co.id/worldcup/frontpage/</string>
+    
+    <string name="media_path">http://media.viva.co.id/thumbs2/</string>
+    <string name="media_thubmnail_prefix">_thumbnail.</string>
+    <string name="media_thubmnail_big">_325_183.</string>
+    <string name="media_thubmnail_small">_151_86.</string>
+    <string name="media_image_path">http://usermedia.viva.co.id/vivabola/vbola_team/medium/</string>
+    
+</resources>
